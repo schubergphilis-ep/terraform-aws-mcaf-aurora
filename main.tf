@@ -230,7 +230,7 @@ resource "aws_db_subnet_group" "default" {
 module "rds_enhanced_monitoring_role" {
   count = var.monitoring_interval != null ? 1 : 0
 
-  source  = "schubergphilis/mcaf-role/aws"
+  source  = "schubergphilis-ep/mcaf-role/aws"
   version = "~> 0.5.0"
 
   name                  = "RDSEnhancedMonitoringRole-${var.name}"
