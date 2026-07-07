@@ -27,7 +27,7 @@ module "vpc" {
 }
 
 module "kms" {
-  source  = "schubergphilis/mcaf-kms/aws"
+  source  = "schubergphilis-ep/mcaf-kms/aws"
   version = "~> 1.0"
 
   name = "example"
